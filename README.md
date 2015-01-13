@@ -1,2 +1,2 @@
-# Kaloyan Kosev's personal Website
+# Kaloyan Kosev's Personal Website
 Coming soon!
