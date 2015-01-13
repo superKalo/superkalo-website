@@ -1,2 +1,2 @@
-# superkalo-website
-Kaloyan Kosev's personal Website
+# Kaloyan Kosev's personal Website
+Coming soon!
