@@ -1,0 +1,11 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^www.superkalo.com [NC]
+RewriteRule ^(.*)$ http://superkalo.com/$1 [L,R=301]
+
+ErrorDocument 404 /404.html
+
+RewriteCond %{HTTP_HOST} ^superkalo\.mgelektronika\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.superkalo\.mgelektronika\.com$
+RewriteRule ^/?$ "http\:\/\/superkalo\.com" [R=301,L]
+

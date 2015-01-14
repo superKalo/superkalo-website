@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+	<head>
+		<meta name="robots" content="noindex, nofollow" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<title>Event Dashboard</title>
+
+		<link rel="shortcut icon" href="img/favicon.ico" />
+
+		<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' /> -->
+
+		<link rel="stylesheet" href="css/style.css" />
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="main-container">
+
+		   <header class="header">
+		   		<h1>
+		   			<strong>Feedback</strong><br />
+					is breakfast<br />
+					for champions!
+		   		</h1>
+		   </header>
+
+		   <section class="body">
+		   		<div class="center">
+
+		   			<div id="feedback_content">
+		   				<p class="chart-paragraph">
+			   				<b>1.</b> Pick the balance between<br />
+			   				<strong>the presentation</strong> and <strong>the content presented</strong>
+			   			</p>
+
+				   		<div id="content-feedback-grid-box" class="content-feedback-grid constrain-to-parent">
+
+				   			<div class="before_show">
+				   				<img src="img/drag_hand.png" alt="Drag Icon" />
+				   				touch to start
+				   			</div>
+
+					   		<span class="up-label">
+					   			Presentation<br />
+					   			<span id="percent-presentation" class="percent">50%</span>
+					   		</span>
+					   		<span class="down-label">
+					   			<span id="percent-content" class="percent">50%</span><br />
+					   			Content
+					   		</span>
+
+					   		<img id="content-feedback-grid" src="img/atanas_bogoev.png" class="presentor-face" width="75" height="75" alt="Atanas Bogoev" />
+
+					   		<div class="separator-line"></div>
+
+					   		<svg class="vertical-arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+								<polygon points="418.999,256.001 121.001,462 121.001,50 "/>
+							</svg>
+							<svg class="horizontal-arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+								<polygon points="418.999,256.001 121.001,462 121.001,50 "/>
+							</svg>
+				   		</div>
+
+				   		<p class="chart-paragraph"><b>2.</b> Draw a curved line<br />
+				   		how engaged you were during <strong>the beginning</strong>, <strong>middle</strong> and <strong>the end</strong> of the session</p>
+
+
+				   		<div class="content-feedback-curved-line">
+
+							<div class="positive-scale">
+								3<br />
+								2<br />
+								1
+							</div>
+							<div class="negative-scale">
+								-1<br />
+								-2<br />
+								-3
+							</div>
+
+
+					   		<span class="beginning-label">beginning</span>
+					   		<span class="middle-label">middle</span>
+					   		<span class="end-label">end</span>
+
+					   		<div class="separator-line"></div>
+					   		<div class="separator-line-beginning"></div>
+					   		<div class="separator-line-middle"></div>
+					   		<div class="separator-line-end"></div>
+
+
+							<svg class="horizontal-arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+								<polygon points="418.999,256.001 121.001,462 121.001,50 "/>
+							</svg>
+							<svg class="horizontal-arrow-bottom" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+								<polygon points="418.999,256.001 121.001,462 121.001,50 "/>
+							</svg>
+							<svg class="vertical-arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+								<polygon points="418.999,256.001 121.001,462 121.001,50 "/>
+							</svg>
+
+							<canvas width="290" height="290" id="draw_box" class="draw_box"></canvas>
+							<button id="clear" class="default_but clear_but">clear</button>
+				   		</div>
+
+				   		<p class="chart-paragraph"><b>3.</b> Add a comment:</p>
+				   		<textarea cols="30" rows="5" class="comment-textarea" placeholder="... tell us more :)"></textarea>
+
+				   		<br />
+				   		<br />
+
+						<div class="centered">
+							<button id="send" class="default_but send_but">Send</button>
+						</div>
+
+		   			</div>
+
+					<div id="thank_you" class="thank_you" style="display: none;">
+						<h2>
+				   			<strong>Thank you</strong><br />
+							for helping us improve!
+							<img src="img/event_dashboard.png" class="logo" width="150" height="63" alt="Event Dashboard Logo" />
+					   	</h2>
+					</div>
+				</div>
+		   </section>
+
+		   <!-- <footer class="footer">
+		   </footer> -->
+
+		</div>
+
+
+		<script src="js/jquery-1.11.0.min.js"></script>
+		<script src="js/jquery.pep.js"></script>
+		<script src="js/modernizr.custom.34982.js"></script>
+		<script src="js/signatureCapture.js"></script>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>
