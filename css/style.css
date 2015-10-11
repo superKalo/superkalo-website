@@ -1,0 +1,24 @@
+body,
+html {
+  height: 100%; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-weight: 300; }
+
+.bg-navy-gradient {
+  background: #00203f;
+  background: linear-gradient(to bottom, #00203f 0%, #000a14 100%); }
+
+.header {
+  padding: 40px 0 30px; }
+  .header__avatar {
+    border-radius: 50%;
+    border: 1px solid #999;
+    background-color: #fff; }
+
+.content__name {
+  display: inline; }
+
+/*# sourceMappingURL=style.css.map */
