@@ -36,6 +36,7 @@ p {
     }
 }
 .content {
+    padding: 0 20px;
     &__name {
         font-size: 18px;
         font-weight: 600;
@@ -44,7 +45,7 @@ p {
 }
 
 .footer {
-    padding-bottom: 20px;
+    padding: 0 20px 20px;
 }
 
 // Tooltip custom styles
@@ -52,6 +53,9 @@ p {
     cursor: pointer;
     width: 300px;
     margin-bottom: 10px;
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
     .tooltip-front {
         border: 1px solid rgba(0, 0, 0, .7);
         border-right: 0;
