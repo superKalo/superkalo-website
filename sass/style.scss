@@ -1,0 +1,75 @@
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f5f5f5;
+    text-align: center;
+    font-weight: 300;
+    color: rgba(0, 0, 0, .7);
+    font-size: 18px;
+    line-height: 1.63;
+}
+a {
+    color: rgba(0, 0, 0, .9);
+}
+p {
+    margin-bottom: 20px;
+}
+
+.header {
+    padding: 50px 0 5px;
+    &__avatar {
+        border-radius: 50%;
+        border: 1px solid #AAA;
+        padding: 3px;
+        background-color: #fff;
+    }
+}
+.content {
+    &__name {
+        font-size: 18px;
+        font-weight: 600;
+        display: inline;
+    }
+}
+
+.footer {
+    padding-bottom: 20px;
+}
+
+// Tooltip custom styles
+.tooltip-content {
+    cursor: pointer;
+    width: 300px;
+    margin-bottom: 10px;
+    .tooltip-front {
+        border: 1px solid rgba(0, 0, 0, .7);
+        border-right: 0;
+        width: 80px;
+        background-color: #fff;
+        &:after {
+            border-top-color: #000;
+        }
+    }
+    .tooltip-back {
+        background-color: rgba(0,116,217,1);
+        width: 220px;
+        font-size: 11px;
+        padding: 8px;
+        text-align: left;
+        line-height: 1.2;
+        &:after {
+            border-top-color: rgba(0,116,217,1);
+        }
+    }
+}
