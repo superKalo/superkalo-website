@@ -9,9 +9,4 @@
       <priority>1.00</priority>
       <changefreq>monthly</changefreq>
    </url>
-   <url>
-      <loc>http://superkalo.com/en</loc>
-	  <priority>0.95</priority>
-      <changefreq>monthly</changefreq>
-   </url>
 </urlset>
