@@ -1,0 +1,7 @@
+{
+  "name": "Kaloyan Kosev's Website",
+  "version": "0.2.0",
+  "dependencies": {
+    "vide": "~0.3.7"
+  }
+}
