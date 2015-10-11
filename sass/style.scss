@@ -28,6 +28,9 @@ p {
 
 .header {
     padding: 50px 0 5px;
+    @media screen and (max-width: 600px) {
+        padding-top: 30px;
+    }
     &__avatar {
         border-radius: 50%;
         border: 1px solid #AAA;
