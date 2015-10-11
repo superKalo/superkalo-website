@@ -2,3 +2,4 @@
 *
 # But not these files...
 !.gitignore
+!style.min.css

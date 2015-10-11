@@ -5,7 +5,7 @@
             "path": ".",
             "folder_exclude_patterns": [".sass-cache", "node_modules"],
             "binary_file_patterns": ["*.jpg", "*.jpeg", "*.png", "*.gif", "*.ttf", "*.tga", "*.dds", "*.ico", "*.eot", "*.pdf", "*.swf", "*.jar", "*.zip"],
-            "file_exclude_patterns": ["*.min.*", "*.map"]
+            "file_exclude_patterns": ["*.map"]
         }
     ]
 }
