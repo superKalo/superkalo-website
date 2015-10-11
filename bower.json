@@ -3,6 +3,7 @@
   "version": "0.2.0",
   "dependencies": {
     "normalize-css": "normalize.css#~3.0.3",
+    "TooltipStylesInspiration": "git@github.com:codrops/TooltipStylesInspiration.git",
     "vide": "~0.3.7"
   }
 }

@@ -1,16 +1,24 @@
 $white: rgba(255, 255, 255, .8);
 
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body,
 html {
     height: 100%;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
     font-weight: 300;
     color: $white;
     font-size: 18px;
+    line-height: 1.63;
 }
 a {
     color: $white;
@@ -35,5 +43,21 @@ a {
         font-size: 18px;
         font-weight: 600;
         display: inline;
+    }
+}
+
+// Tooltip custom styles
+.tooltip-content {
+    cursor: pointer;
+    width: 300px;
+    .tooltip-front {
+        width: 80px;
+    }
+    .tooltip-back {
+        width: 220px;
+        font-size: 11px;
+        padding: 8px;
+        text-align: left;
+        line-height: 1.2;
     }
 }
