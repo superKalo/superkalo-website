@@ -12,6 +12,17 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:300,700">
     <link rel="stylesheet" href="/css/style.min.css">
 
+    <style>
+        /*
+            Боби, копирай клас "group" от тук ;-)
+            Повече инфо: http://nicolasgallagher.com/micro-clearfix-hack/
+        */
+        .group:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+        .group:before, .group:after { content: ""; display: table; }
+        .group:after { clear: both; }
+        .group { zoom: 1; /* ie 6/7 */ }
+    </style>
+
     <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-touch-icon-72x72.png">
