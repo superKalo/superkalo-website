@@ -54,8 +54,9 @@ p {
 // Tooltip custom styles
 .tooltip-content {
     cursor: pointer;
-    width: 300px;
+    width: 380px;
     margin-bottom: 10px;
+    transition-duration: .5s, 1s;
     @media screen and (max-width: 600px) {
         display: none;
     }
@@ -70,13 +71,20 @@ p {
     }
     .tooltip-back {
         background-color: rgba(0,116,217,1);
-        width: 220px;
-        font-size: 11px;
+        width: 300px;
+        font-size: 13px;
+        font-weight: 400;
         padding: 8px;
         text-align: left;
         line-height: 1.2;
         &:after {
             border-top-color: rgba(0,116,217,1);
+        }
+    }
+    .tooltip-effect-3 & {
+        transform: translate3d(0,10px,0) rotate3d(0,0,1,-10deg);
+        > span {
+            transition: .5s;
         }
     }
 }
