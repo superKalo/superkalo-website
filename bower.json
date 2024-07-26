@@ -1,5 +1,5 @@
 {
-  "name": "Kaloyan Kosev's Website",
+  "name": "superkalo-website",
   "version": "0.2.0",
   "dependencies": {
     "normalize-css": "normalize.css#~3.0.3",
