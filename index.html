@@ -9,7 +9,6 @@
     <meta name="description" content="Kaloyan Kosev's personal website." />
     <meta name="keywords" content="Kaloyan Kosev, superKalo, Калоян Косев, Калоян, Косев" />
 
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:300,400,700" />
     <link rel="stylesheet" href="/css/style.min.css" />
 
     <!--
@@ -21,25 +20,10 @@
         If so, get in touch with me@superkalo.com
     -->
 
-    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicons/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicons/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/apple-touch-icon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon-180x180.png" />
-    <link rel="icon" type="image/png" href="/img/favicons/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="/img/favicons/android-chrome-192x192.png" sizes="192x192" />
-    <link rel="icon" type="image/png" href="/img/favicons/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/png" href="/img/favicons/favicon-16x16.png" sizes="16x16" />
-    <link rel="manifest" href="/img/favicons/manifest.json" />
-    <link rel="shortcut icon" href="/img/favicons/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#2b5797" />
-    <meta name="msapplication-TileImage" content="/img/favicons/mstile-144x144.png" />
-    <meta name="msapplication-config" content="/img/favicons/browserconfig.xml" />
-    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" type="image/x-icon" href="/img/kaloyan-kosev-favicon.ico">
+    <link rel="icon" type="image/png" sizes="48x48" href="/img/kaloyan-kosev-favicon.png">
+    <link rel="icon" type="image/webp" sizes="48x48" href="/img/kaloyan-kosev-favicon.webp">
+
 
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -59,18 +43,24 @@
 <body itemscope itemtype="http://schema.org/Person">
 
     <header class="header">
-        <img src="/img/kaloyan-kosev.jpg" class="header__avatar" width="75" height="75" alt="Kaloyan Kosev" title="Kaloyan Kosev, superKalo" itemprop="image" />
+        <img src="/img/kaloyan-kosev-120.webp"
+            srcset="/img/kaloyan-kosev-240.webp 2x, /img/kaloyan-kosev-480.webp 4x"
+            class="header__avatar" 
+            width="120" 
+            height="120" 
+            alt="Kaloyan Kosev" 
+            title="Kaloyan Kosev, superKalo"
+            itemprop="image" />
     </header>
     <section class="content">
-        Hello, my name is
-        <h1 class="content__name" itemprop="name" title="Kaloyan Kosev, superKalo">Kalo</h1>.
+        Hi! I'm
+        <h1 class="content__name" itemprop="name" title="Kaloyan Kosev, superKalo">Kalo</h1> 👋
 
         <p>
-            I am a <span itemprop="jobTitle">coder</span>,<br>
-            passionate about front-end technologies,<br>
+            <span itemprop="jobTitle">JavaScript engineer</span>,<br>
             part of the
             <a href="http://devlabs.bg" class="tooltip tooltip-effect-3" target="_blank">
-                    <span>DevLabs</span><!--
+                    <span><strong>DevLabs</strong></span><!--
                     --><span class="tooltip-content">
                         <span class="tooltip-front">
                             <img src="/img/logos/devlabs.png" width="60" height="60" alt="DevLabs Logo"/>
@@ -78,24 +68,14 @@
                         <span class="tooltip-back">Strong team of programmers, designers and project managers, who think digital and love to create brave web solutions. All challenges welcomed!</span>
                     </span><!--
                 --></a>
-            dream-team.
+            dream-team,<br>
+            in the 10k+ reputation club on Stack Overflow,<br>
+            now focused on React, React Native, and NodeJS.
         </p>
 
         <div itemprop="description">
             <p>
-                I &#10084; startup projects,<br>
-                I am a member of
-                <a href="http://ablebulgaria.org/" class="tooltip tooltip-effect-3" target="_blank" itemprop="memberOf" itemscope itemtype="http://schema.org/Organization">
-                    <span itemprop="name">ABLE</span><!--
-                    --><span class="tooltip-content"><!--
-                        --><span class="tooltip-front">
-                            <img src="/img/logos/able.jpg" width="60" height="60" alt="Association of the Bulgarian Leaders and Entrepreneurs Logo"/>
-                        </span>
-                        <span class="tooltip-back">Association of the Bulgarian Leaders and Entrepreneurs, a community of entrepreneurial young people, which inspire leadership and promote entrepreneurial culture</span><!--
-                    --></span><!--
-                --></a><br>
-
-                and I co-created
+                I 💚 startup projects! I co-created<br>
                 <a href="https://easierenglish.bg/" class="tooltip tooltip-effect-3" target="_blank">
                     <span>EasierEnglish.BG</span><!--
                     --><span class="tooltip-content"><!--
@@ -104,46 +84,48 @@
                         </span>
                         <span class="tooltip-back">Helping the Bulgarians who want to improve their English skills, with a free platform where everything is structured, arranged and explained in Bulgarian language.</span>
                     </span><!--
-                --></a>,
+                --></a> (10k+ unique visits/month),
                 <br />
+                <a href="https://crypto-tab.com" target="_blank">CryptoTab</a> (8k+ active installations on Chrome and Firefox),<br>
 
-                <a href="https://p2phandbook.com" target="_blank">P2P Handbook</a>, <a href="https://dora-app.com" target="_blank">Dora for Teams</a> and <a href="https://crypto-tab.com" target="_blank">CryptoTab</a>.
+                and I'm currently helping <a href="https://ambire.com" target="_blank"><strong>Ambire</strong></a> build a hybrid<br>
+                Account abstraction crypto wallet.<br />
             </p>
             <p>
                 I am proud of being an<br>
 
-                alumni of
-                <a href="http://www.iie.org/Programs/Bulgarian-Young-Leaders-Program" class="tooltip tooltip-effect-3" target="_blank" itemprop="memberOf" itemscope itemtype="http://schema.org/Organization"><!--
-                    --><span itemprop="name">Bulgarian Young Leaders Program</span><!--
-                    --><span class="tooltip-content">
-                        <span class="tooltip-front">
-                            <img src="/img/logos/abf.jpg" width="60" height="60" alt="America For Bulgaria Foundation Logo"/>
+                alumni of the Bulgarian Young Leaders Program,<br>
+
+                a member of
+                <a href="http://ablebulgaria.org/" class="tooltip tooltip-effect-3" target="_blank" itemprop="memberOf" itemscope itemtype="http://schema.org/Organization">
+                    <span itemprop="name">ABLE</span><!--
+                    --><span class="tooltip-content"><!--
+                        --><span class="tooltip-front">
+                            <img src="/img/logos/able.jpg" width="60" height="60" alt="Association of the Bulgarian Leaders and Entrepreneurs Logo"/>
                         </span>
-                        <span class="tooltip-back">Sponsored by the America for Bulgaria Foundation, a program providing entrepreneurship and leadership training for Bulgarian students in the USA.</span>
-                    </span><!--
-                --></a>,<br>
+                        <span class="tooltip-back">Association of the Bulgarian Leaders and Entrepreneurs, a community of entrepreneurial young people, which inspire leadership and promote entrepreneurial culture</span><!--
+                    --></span><!--
+                --></a>
 
                 and alumni of
                 <a href="http://aiesec.org/" class="tooltip tooltip-effect-3" target="_blank" itemprop="memberOf" itemscope itemtype="http://schema.org/Organization">
-                    <span itemprop="name">AIESEC</span>
-                    <span class="tooltip-content">
+                    <span itemprop="name">AIESEC</span><!--
+                    --><span class="tooltip-content">
                         <span class="tooltip-front">
                             <img src="/img/logos/aiesec.png" width="60" height="60" alt="Association of the Bulgarian Leaders and Entrepreneurs Logo"/>
                         </span>
                         <span class="tooltip-back">International student-run organization, that provides to young people leadership development and cross-cultural volunteer experiences across the globe.</span>
-                    </span>
-                </a>.
+                    </span><!--
+                --></a>.
             </p>
         </div>
     </section>
 
     <footer class="footer">
         <p>
-            Public activity:<br>
-            <a href="https://linkedin.com/in/superkalo/" target="_blank">linked-in</a> |
-            <a href="http://stackoverflow.com/users/1333836/kaloyan-kosev" target="_blank">stack-overflow</a> |
-            <a href="https://css-tricks.com/author/kaloyankosev/" target="_blank">css-tricks</a> |
-            <a href="https://medium.com/@superKalo" target="_blank">blog</a>
+            I've been sharing my knowledge since 2012 on <a href="http://stackoverflow.com/users/1333836/kaloyan-kosev" target="_blank">Stack Overflow</a>,<br>
+            <a href="https://css-tricks.com/author/kaloyankosev/" target="_blank">CSS-Tricks</a>, <a href="https://medium.com/@superKalo" target="_blank">Medium</a>, <a href="https://p2phandbook.com/" target="_blank">P2P Handbook</a>, and via many workshops & conferences.<br>
+            Find more details about my work on my <a href="https://linkedin.com/in/superkalo/" target="_blank">LinkedIn</a> and <a href="https://github.com/superkalo" target="_blank">GitHub</a>.
         </p>
     </footer>
 
