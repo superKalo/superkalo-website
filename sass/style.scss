@@ -98,3 +98,9 @@ p {
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
