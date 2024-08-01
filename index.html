@@ -42,16 +42,6 @@
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P7YSJKRLR1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-P7YSJKRLR1');
-    </script>
 </head>
 
 <body itemscope itemtype="http://schema.org/Person">
@@ -142,6 +132,18 @@
             'Are you searching for a new challenge? ⚡\n' +
             'If so, get in touch with me@superkalo.com'
         );
+    </script>
+
+    <!-- Moved all the way to the end on purpose (although it's recommended to be in the head) -->
+    <!-- Because it significantly bumps up the Largest Contentful Paint time -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P7YSJKRLR1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-P7YSJKRLR1');
     </script>
 
 </body>
