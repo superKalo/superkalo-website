@@ -67,10 +67,10 @@
         </button>
         <img src="/img/kaloyan-kosev-120.webp"
             srcset="/img/kaloyan-kosev-240.webp 2x, /img/kaloyan-kosev-480.webp 4x"
-            class="header__avatar" 
-            width="120" 
-            height="120" 
-            alt="Kaloyan Kosev" 
+            class="header__avatar"
+            width="120"
+            height="120"
+            alt="Kaloyan Kosev"
             title="Kaloyan Kosev"
             itemprop="image" />
     </header>
@@ -152,6 +152,38 @@
         );
     </script>
 
+    <script>
+        // Theme switching functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+        // Check for saved theme preference or use system preference
+        const currentTheme = localStorage.getItem('theme') ||
+            (prefersDarkScheme.matches ? 'dark' : 'light');
+
+        // Set initial theme
+        document.documentElement.setAttribute('data-theme', currentTheme);
+
+        // Toggle theme
+        themeToggle.addEventListener('click', () => {
+            const newTheme = document.documentElement.getAttribute('data-theme') === 'dark'
+                ? 'light'
+                : 'dark';
+
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+
+        // Listen for system theme changes
+        prefersDarkScheme.addEventListener('change', (e) => {
+            if (!localStorage.getItem('theme')) {
+                document.documentElement.setAttribute('data-theme',
+                    e.matches ? 'dark' : 'light'
+                );
+            }
+        });
+    </script>
+
     <!-- Moved all the way to the end on purpose (although it's recommended to be in the head) -->
     <!-- Because it significantly bumps up the Largest Contentful Paint time -->
     <!-- Google tag (gtag.js) -->
@@ -163,38 +195,5 @@
 
         gtag('config', 'G-P7YSJKRLR1');
     </script>
-
-    <script>
-        // Theme switching functionality
-        const themeToggle = document.getElementById('theme-toggle');
-        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-        
-        // Check for saved theme preference or use system preference
-        const currentTheme = localStorage.getItem('theme') || 
-            (prefersDarkScheme.matches ? 'dark' : 'light');
-        
-        // Set initial theme
-        document.documentElement.setAttribute('data-theme', currentTheme);
-        
-        // Toggle theme
-        themeToggle.addEventListener('click', () => {
-            const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' 
-                ? 'light' 
-                : 'dark';
-            
-            document.documentElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-        });
-
-        // Listen for system theme changes
-        prefersDarkScheme.addEventListener('change', (e) => {
-            if (!localStorage.getItem('theme')) {
-                document.documentElement.setAttribute('data-theme', 
-                    e.matches ? 'dark' : 'light'
-                );
-            }
-        });
-    </script>
-
 </body>
 </html>
