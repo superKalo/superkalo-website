@@ -1,0 +1,93 @@
+// Theme variables
+$themes: (
+  light: (
+    bg-color: #f5f5f5,
+    text-color: #242424,
+    link-color: rgba(0, 0, 0, 0.9),
+    tooltip-front-bg: #fff,
+    tooltip-back-bg: #0074d9,
+    tooltip-border: rgba(0, 0, 0, 0.7),
+    avatar-border: #AAA,
+    avatar-bg: #fff
+  ),
+  dark: (
+    bg-color: #242424,
+    text-color: #f5f5f5,
+    link-color: rgba(255, 255, 255, 0.9),
+    tooltip-front-bg: #333,
+    tooltip-back-bg: #0056b3,
+    tooltip-border: rgba(255, 255, 255, 0.7),
+    avatar-border: #666,
+    avatar-bg: #333
+  )
+);
+
+// Mixin to generate CSS variables
+@mixin generate-theme-vars($theme) {
+  @each $key, $value in $theme {
+    --#{$key}: #{$value};
+  }
+}
+
+// Root styles
+:root {
+  @include generate-theme-vars(map-get($themes, light));
+}
+
+[data-theme="dark"] {
+  @include generate-theme-vars(map-get($themes, dark));
+}
+
+// Theme toggle button
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: rgba(128, 128, 128, 0.1);
+  }
+
+  .sun-icon,
+  .moon-icon {
+    position: absolute;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+}
+
+// Theme-specific icon states
+[data-theme="dark"] {
+  .sun-icon {
+    transform: rotate(0);
+    opacity: 1;
+  }
+
+  .moon-icon {
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+}
+
+[data-theme="light"] {
+  .sun-icon {
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+
+  .moon-icon {
+    transform: rotate(0);
+    opacity: 1;
+  }
+} 
