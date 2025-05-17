@@ -47,7 +47,7 @@ a {
         background-repeat: repeat-x;
         background-size: 4px 4px;
         text-decoration: none;
-        padding: 4px 2px;
+        padding: 4px;
 
         transition: background-size 0.2s;
 
@@ -60,11 +60,11 @@ a {
 
 // Custom properties for link colors and effects
 :root {
-    --mainColor: rgba(20, 204, 204, 0.5); // Turquoise for light theme
+    --mainColor: rgba(20, 204, 204, 0.6); // Turquoise for light theme
 }
 
 [data-theme=dark] {
-    --mainColor: rgba(20, 204, 204, 0.2); // Turquoise for dark theme
+    --mainColor: rgba(255, 255, 255, 0.4); // Fallback to white for the dark theme
 }
 
 // Preserve tooltip styles
