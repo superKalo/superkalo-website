@@ -1,3 +1,5 @@
+@import 'theme';
+
 *,
 *:after,
 *:before {
@@ -12,23 +14,26 @@ html {
 
 body {
     font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
-    background-color: #f5f5f5;
+    background-color: var(--bg-color);
     text-align: center;
     font-weight: 400;
-    color: #242424;
+    color: var(--text-color);
     font-size: 20px;
     line-height: 32px;
     letter-spacing: -0.06px;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+    transition: background-color 0.3s ease, color 0.3s ease;
     @media screen and (max-width: 600px) {
         font-size: 18px;
         line-height: 30px;
     }
 }
+
 a {
-    color: rgba(0, 0, 0, .9);
+    color: var(--link-color);
 }
+
 p {
     margin-bottom: 30px;
     @media screen and (max-width: 600px) {
@@ -43,11 +48,12 @@ p {
     }
     &__avatar {
         border-radius: 50%;
-        border: 1px solid #AAA;
+        border: 1px solid var(--avatar-border);
         padding: 3px;
-        background-color: #fff;
+        background-color: var(--avatar-bg);
     }
 }
+
 .content {
     padding: 0 20px;
     &__name {
@@ -74,16 +80,16 @@ p {
         display: none;
     }
     .tooltip-front {
-        border: 1px solid rgba(0, 0, 0, .7);
+        border: 1px solid var(--tooltip-border);
         border-right: 0;
         width: 80px;
-        background-color: #fff;
+        background-color: var(--tooltip-front-bg);
         &:after {
-            border-top-color: #000;
+            border-top-color: var(--tooltip-border);
         }
     }
     .tooltip-back {
-        background-color: rgba(0,116,217,1);
+        background-color: var(--tooltip-back-bg);
         width: 300px;
         font-size: 13px;
         font-weight: 400;
@@ -91,7 +97,7 @@ p {
         text-align: left;
         line-height: 1.2;
         &:after {
-            border-top-color: rgba(0,116,217,1);
+            border-top-color: var(--tooltip-back-bg);
         }
     }
     .tooltip-effect-3 & {
