@@ -30,8 +30,48 @@ body {
     }
 }
 
+// Border to Background Effect for links with smooth IN/OUT animations
 a {
     color: var(--link-color);
+    text-decoration: none;
+    position: relative;
+
+    // Only apply hover effects to non-tooltip links
+    &:not(.tooltip) {
+        background: linear-gradient(
+            to bottom,
+            var(--mainColor) 0%,
+            var(--mainColor) 100%
+        );
+        background-position: 0 100%;
+        background-repeat: repeat-x;
+        background-size: 4px 4px;
+        text-decoration: none;
+        padding: 4px 2px;
+
+        transition: background-size 0.2s;
+
+        &:hover {
+            background-size: 4px 50px;
+        }
+    }
+}
+
+
+// Custom properties for link colors and effects
+:root {
+    --mainColor: rgba(20, 204, 204, 0.5); // Turquoise for light theme
+}
+
+[data-theme=dark] {
+    --mainColor: rgba(20, 204, 204, 0.2); // Turquoise for dark theme
+}
+
+// Preserve tooltip styles
+.tooltip {
+    a::after {
+        display: none;
+    }
 }
 
 p {
