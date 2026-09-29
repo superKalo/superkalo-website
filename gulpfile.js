@@ -1,6 +1,6 @@
 const gulp = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
-const cssmin = require("gulp-cssmin");
+const cleanCss = require("gulp-clean-css");
 const concat = require("gulp-concat");
 
 function compileSass() {
@@ -18,7 +18,7 @@ function minifyCss() {
       "css/style.css",
     ])
     .pipe(concat("style.min.css"))
-    .pipe(cssmin())
+    .pipe(cleanCss())
     .pipe(gulp.dest("css"));
 }
 
